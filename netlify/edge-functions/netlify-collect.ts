@@ -1,0 +1,42 @@
+/**
+ * Query the contest API to get the current status and render the response in
+ * the <netlify-collect> component on the page.
+ */
+
+import { HTMLRewriter, type Element } from 'https://ghuc.cc/worker-tools/html-rewriter/index.ts';
+import { Config, Context } from '@netlify/edge-functions';
+
+class ElementHandler {
+  private hostname: string;
+
+  constructor(hostname: string) {
+    this.hostname = hostname;
+  }
+
+  async element(element: Element) {
+    // const apiBaseUrl = 'http://localhost:9999';
+    // // const apiBaseUrl = 'https://webu24.netlify.app';
+    // const params: Record<string, string> = { id: this.hostname };
+    // const apiUrl = new URL('/get-submission', apiBaseUrl);
+    // Object.keys(params).forEach((key) => apiUrl.searchParams.append(key, params[key] as string));
+    // console.log('>>>', apiUrl.toString());
+    // const response = await fetch(apiUrl.toString(), { method: 'GET' });
+    // // console.log('>>>', response);
+    // const resBody = await response.json();
+    // console.log('>>>', resBody.html);
+    // element.replace('<p>Hello world</p>', { html: true });
+    // if (response.ok && resBody.html?.length > 0) {
+    //   element.replace(resBody.html, { html: true });
+    // }
+  }
+}
+
+export default async (request: Request, context: Context) => {
+  const response = await context.next();
+  const hostname = new URL(request.url).hostname;
+  return new HTMLRewriter().on('netlify-collect', new ElementHandler(hostname)).transform(response);
+};
+
+export const config: Config = {
+  path: '/',
+};
