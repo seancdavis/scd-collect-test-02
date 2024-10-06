@@ -17,7 +17,7 @@ class ElementHandler {
     // Build the URL to query
     const apiBaseUrl = 'http://localhost:9999';
     const params: Record<string, string> = { id: this.hostname };
-    const apiUrl = new URL('/get-submission', apiBaseUrl);
+    const apiUrl = new URL('/submissions/get', apiBaseUrl);
     Object.keys(params).forEach((key) => apiUrl.searchParams.append(key, params[key] as string));
 
     const response = await fetch(apiUrl.toString());
