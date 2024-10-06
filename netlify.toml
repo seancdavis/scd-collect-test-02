@@ -1,12 +1,12 @@
-[build] 
-  publish = "www"
-  command = ""
+[build]
+publish = "www"
+command = ""
 
-[dev] 
-  publish = "www"
-  command = ""
+[dev]
+publish = "www"
+command = ""
 
-# We'll use this Netlify Build Plugin to automatically submit
-# your deployed site to the leaderboard.
+# This Netlify Build Plugin automatically registers this project in the Netlify
+# Collect competition for Web Unleashed 2024.
 [[plugins]]
-  package = "/plugins/submit-to-leaderboard/index.js"
+package = "/plugins/register-submission/index.js"

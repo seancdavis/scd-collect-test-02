@@ -56,7 +56,7 @@ module.exports = {
 
     console.log(`Registering ${siteURL} in the leaderboard`);
 
-    await fetch('https://compose-challenge.netlify.app/submission', {
+    await fetch('http://localhost:9999/register-submission', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
