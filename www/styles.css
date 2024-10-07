@@ -55,6 +55,10 @@ blockquote img {
   width: 2rem;
 }
 
+form > div:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 /* ---- Marquee ---- */
 
 .header-marquee {
@@ -158,11 +162,29 @@ blockquote img {
 
 /* ---- Dynamic Content ---- */
 
-.not-registered {
+section[data-state='unregistered'] {
   background-color: var(--blue-900);
   border-radius: var(--radius-3);
   font-size: 1.5rem;
   font-style: italic;
   font-weight: bold;
   text-align: center;
+}
+
+.footnote {
+  font-size: 0.85rem;
+  font-style: italic;
+  margin-top: -0.5rem;
+}
+
+.intro {
+  margin-bottom: 1.5rem;
+}
+
+.intro h2 {
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: var(--step-2);
 }
