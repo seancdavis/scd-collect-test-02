@@ -17,7 +17,7 @@ class ElementHandler {
     // Build the URL to query
     const apiBaseUrl = 'http://localhost:9999';
     const params: Record<string, string> = { id: this.hostname };
-    const apiUrl = new URL('/submissions/get', apiBaseUrl);
+    const apiUrl = new URL('/submissions/html', apiBaseUrl);
     Object.keys(params).forEach((key) => apiUrl.searchParams.append(key, params[key] as string));
 
     const response = await fetch(apiUrl.toString());
@@ -25,6 +25,8 @@ class ElementHandler {
 
     if (response.ok && resBody.html?.length > 0) {
       element.replace(resBody.html, { html: true });
+    } else {
+      console.log(`Could not get html to render page.`, JSON.stringify(resBody, null, 2));
     }
   }
 }
