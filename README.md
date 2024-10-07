@@ -8,7 +8,7 @@ To get started, you need to:
 
 1. Click the deploy button below. This will clone this repo as a new public repo in your own GitHub account. Your new repo will then be used to create a new site in Netlify.
 
-   [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/compose-code-challenge)
+   [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/webu24-netlify-collect)
 
 2. Once successfully deployed, you are automatically registered on the leaderboard. Visit your new site and follow the steps on screen to fill in the necessary details to collect your initial deployment reward.
 
