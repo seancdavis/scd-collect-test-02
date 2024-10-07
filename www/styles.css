@@ -162,11 +162,11 @@ form > div:not(:last-child) {
 
 /* ---- Dynamic Content ---- */
 
-section[data-state='unregistered'] {
+section[data-state='unregistered'],
+section[data-state='completed'] {
   background-color: var(--blue-900);
   border-radius: var(--radius-3);
   font-size: 1.5rem;
-  font-style: italic;
   font-weight: bold;
   text-align: center;
 }
