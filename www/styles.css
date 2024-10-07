@@ -188,3 +188,21 @@ section[data-state='unregistered'] {
 .intro p {
   font-size: var(--step-2);
 }
+
+.primitives-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.primitive-card {
+  border: 1px solid var(--blue-200);
+  border-radius: var(--radius-3);
+  padding: 1rem;
+}
+
+.primitive-card h3 {
+  font-size: var(--step-2);
+  margin: 0 0 0.75rem;
+  padding: 0;
+}
