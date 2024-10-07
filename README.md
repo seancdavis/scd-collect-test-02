@@ -1,19 +1,23 @@
-# Netlify Compose Code Challenge
+# Netlify Collect at Web Unleashed 2024
 
-Welcome to the coding challenge at Netlify Compose.
-
-This repo contains a site that you can clone, deploy, update, and explore to learn about some Netlify fundamentals. If you are attending Netlify Compose 2024 in San Francisco, following the instructions held within this site will also qualify you to enter the prize draw at the end of Netlify Compose.
+Welcome to _Netlify Collect_, the activity that combines deploying a site on Netlify with a chance to win prizes! See below for details.
 
 ## Get started
 
 To get started, you need to:
 
-1. Click on the deploy button below. That will clone this repo as a new public repo in your own GitHub account and use it to create a new site in Netlify.
+1. Click the deploy button below. This will clone this repo as a new public repo in your own GitHub account. Your new repo will then be used to create a new site in Netlify.
 
    [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/compose-code-challenge)
 
-2. Visit your newly created site to find the instructions to complete the challenge.
+2. Once successfully deployed, you are automatically registered on the leaderboard. Visit your new site and follow the steps on screen to fill in the necessary details to collect your initial deployment reward.
 
-## Enter the prize draw
+3. Then it's time to collect all the primitives! Make your way around Web Unleashed to find Netlifolks (we'll be wearing blue shirts). Ask us which primitive we represent, and then type that primitive into your site to collect it.
 
-We'll hold a prize draw at the end of [Compose Conference](https://netlify.com/compose) on October 3, 2024 to choose three winners from those who have successfully completed all the steps in the challenge.
+4. Those who collect at least 6 primitives (there are 9 total) will be entered into the grand prize drawing.
+
+### Grand prize drawing
+
+This is designed for those who are in-person at Web Unleashed 2024. The competition will be locked on Saturday, October 12.
+
+We will complete the grand prize drawing the following week by picking one entry at random from all entries with at least 6 primitives.
