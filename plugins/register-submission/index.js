@@ -56,7 +56,7 @@ module.exports = {
 
     console.log(`Registering ${siteURL} in the leaderboard`);
 
-    await fetch('http://localhost:9999/submissions/create', {
+    await fetch('https://webu24.netlify.app/submissions/create', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
